@@ -39,8 +39,8 @@ html{
 .contenedor-header header nav ul li a{
     text-align: none;
     color: #fff;
-    margin: 0 15px;
-    padding: 3px;
+    margin: 0 30px;
+    padding: 10px;
     transition: .5s;
     text-decoration: none;
 }
@@ -50,6 +50,7 @@ html{
 .nav-responsive{
     background-color: #1CB698;
     color:#fff;
+    margin: 0 30px;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -386,4 +387,42 @@ html{
 
    
 }
+.imagen .imagen-responsive {
+    max-width: 100%; /* Hace que la imagen sea responsive */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    display: block; /* Establece la imagen como un elemento en bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente en su contenedor */
+}
+
+/* Media query para ocultar la imagen en pantallas pequeñas */
+@media (max-width: 768px) {
+    .imagen-responsive {
+        display: none; /* Oculta la imagen cuando la pantalla es más pequeña o igual a 768px */
+    }
+}
+
+@media (max-width: 768px) {
+    .servicio {
+        padding: 20px 10px; /* Ajusta el espacio interno para dispositivos móviles */
+    }
+
+    .servicio h2 {
+        font-size: 30px; /* Ajusta el tamaño del título para dispositivos móviles */
+    }
+
+    .servicio .contenido-seccion p {
+        font-size: 18px; /* Ajusta el tamaño del texto para dispositivos móviles */
+    }
+
+    .servicio .logos img {
+        width: 40px; /* Ajusta el tamaño de las imágenes para dispositivos móviles */
+    }
+
+    .servicio .imagen {
+        margin-top: -160px; /* Ajusta la posición de la imagen para dispositivos móviles */
+    }
+}
+
+
+
 
